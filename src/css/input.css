@@ -37,7 +37,7 @@
 
   .redes-menu li{
     @apply 
-      m-auto mt-[15px] mb-[4px] text-xs w-[80%] after:content-[''] after:block after:w-full after:h-px after:bg-linha lg:hover:after:bg-linha-h after:transition-colors after:duration-500  
+      m-auto mt-[15px] mb-[4px] w-[80%] after:content-[''] after:block after:w-full after:h-px after:bg-linha lg:hover:after:bg-linha-h after:transition-colors after:duration-500  
     ;
   }
 
