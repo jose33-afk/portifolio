@@ -1,0 +1,1 @@
+import './components/redes-so.js';

@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+@theme {
+  --font-comic: "Comic Neue", sans-serif;
+  --font-roboto: "Roboto", sans-serif;  
+  --color-bg-pag: #05000B;
+  --color-bg-header: #110223;
+  --color-bord: #381060;
+  --color-linha: #25004B;
+  --color-linha-h: #834BBB;
+  --color-roxo-1: #D6ADFF;
+  --color-roxo-1h: #B986EC;
+  --color-roxo-2: #935DCA;
+  --color-roxo-3: #834BBB;
+  --color-border-roxo: #6E5685;
+}
+
+@layer components { 
+  .alinha-center {
+    @apply flex items-center;
+  }
+
+  .transicao-cor {
+    @apply transition-colors duration-500; 
+  }
+
+  /*Redes sociais menu*/
+  .redes-menu-oculto {
+    @apply opacity-0 invisible;
+  }
+
+  .redes-menu {
+    @apply text-roxo-3 font-bold;
+  }
+
+  .redes-menu li{
+    @apply 
+      m-auto mt-[15px] mb-[4px] w-[80%] after:content-[''] after:block 
+      after:w-full after:h-px after:bg-linha lg:hover:after:bg-linha-h after:transition-colors after:duration-500  
+    ;
+  }
+
+}
