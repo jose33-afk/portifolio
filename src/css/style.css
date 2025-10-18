@@ -21,7 +21,7 @@
     --font-comic: "Comic Neue", sans-serif;
     --font-roboto: "Roboto", sans-serif;
     --color-bg-pag: #05000B;
-    --color-bg-header: #110223;
+    --color-bg-header: #0B0216;
     --color-bord: #381060;
     --color-linha: #25004B;
     --color-linha-h: #834BBB;
@@ -208,9 +208,6 @@
   .flex {
     display: flex;
   }
-  .table {
-    display: table;
-  }
   .size-\[10px\] {
     width: 10px;
     height: 10px;
@@ -228,26 +225,17 @@
   .h-\[70px\] {
     height: 70px;
   }
-  .h-\[120px\] {
-    height: 120px;
-  }
   .h-\[135px\] {
     height: 135px;
   }
   .w-full {
     width: 100%;
   }
-  .border-collapse {
-    border-collapse: collapse;
-  }
   .rotate-180 {
     rotate: 180deg;
   }
   .cursor-pointer {
     cursor: pointer;
-  }
-  .resize {
-    resize: both;
   }
   .items-center {
     align-items: center;
@@ -267,10 +255,6 @@
   .rounded-b-md {
     border-bottom-right-radius: var(--radius-md);
     border-bottom-left-radius: var(--radius-md);
-  }
-  .border {
-    border-style: var(--tw-border-style);
-    border-width: 1px;
   }
   .border-1 {
     border-style: var(--tw-border-style);
@@ -330,13 +314,6 @@
   .text-roxo-2 {
     color: var(--color-roxo-2);
   }
-  .underline {
-    text-decoration-line: underline;
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
-  }
   .transition-all {
     transition-property: all;
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
@@ -368,11 +345,6 @@
   .sm\:ml-\[40px\] {
     @media (width >= 40rem) {
       margin-left: 40px;
-    }
-  }
-  .sm\:h-\[135px\] {
-    @media (width >= 40rem) {
-      height: 135px;
     }
   }
   .sm\:w-\[185px\] {
@@ -482,11 +454,6 @@
   syntax: "*";
   inherits: false;
 }
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
 @property --tw-duration {
   syntax: "*";
   inherits: false;
@@ -505,7 +472,6 @@
     *, ::before, ::after, ::backdrop {
       --tw-border-style: solid;
       --tw-font-weight: initial;
-      --tw-outline-style: solid;
       --tw-duration: initial;
       --tw-ease: initial;
       --tw-content: "";
