@@ -8,12 +8,14 @@
   --color-bg-pag: #05000B;
   --color-bg-header: #080110;
   --color-bord: #381060;
+  --color-bord2: #614C76;
   --color-linha: #25004B;
   --color-linha-h: #834BBB;
   --color-roxo-1: #D6ADFF;
   --color-roxo-1h: #B986EC;
   --color-roxo-2: #935DCA;
   --color-roxo-3: #834BBB;
+  --color-roxo-4: #16002D;
   --color-border-roxo: #6E5685;
 }
 
@@ -40,5 +42,23 @@
       m-auto mt-[15px] mb-[4px] text-xs sm:text-sm w-[80%] after:content-[''] after:block after:w-full after:h-px after:bg-linha lg:hover:after:bg-linha-h after:transition-colors after:duration-500  
     ;
   }
+
+  /*botoes tabs*/
+  .bnt-tabs {
+    @apply 
+    border-t-1 border-l-1 border-r-1 border-bord2 bg-roxo-4
+    font-comic font-bold
+    text-roxo-3 w-[170px] h-[40px] m-0
+    ;
+  }
+
+  .container-img {
+    @apply 
+      border-1 border-bord w-full h-[calc(100%-40px)] rounded-b-sm 
+      rounded-r-sm
+    ;
+  }
+
+
 
 }

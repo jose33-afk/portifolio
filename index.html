@@ -8,15 +8,15 @@
     <title>Portifolio-jose</title>
 </head>
 <body class="
-  bg-bg-pag
+  bg-bg-pag h-full
 "> 
   <header class="
-    bg-bg-header border-b-2 border-bord flex items-center justify-between rounded-b-md sm:text-sm font-comic text-[10px]
-    col-span-full row-end-2 h-[70px] w-full
+    bg-bg-header border-b-1 border-bord flex items-center justify-between rounded-b-md sm:text-sm font-comic text-[10px]
+    col-span-full row-end-2 h-[70px] w-full 
   ">
     <!--perfil-->
     <div class="
-      flex gap-x-[15px] sm:gap-x-[25px] ml-[10px] sm:ml-[40px] items-center
+      flex gap-x-[15px] sm:gap-x-[25px] ml-[10px] sm:ml-[50px] items-center
     "> 
       <img src="./src/img/German Sparrow (Klein Moretti).jpeg" alt="foto-jose" class="rounded-full size-[46px] object-cover border-1 border-bord">
       <p class="
@@ -27,7 +27,7 @@
       </p>
     </div>
     <!--Redes e contat-->
-    <div class="mr-[10px] sm:mr-[40px] alinha-center h-[26px] relative gap-x-[15px] sm:gap-x-[25px]">
+    <div class="mr-[10px] sm:mr-[50px] alinha-center h-[26px] relative gap-x-[15px] sm:gap-x-[25px]">
       <button class="alinha-center group cursor-pointer" data-bnt-soci>
         <p class="font-bold text-roxo-1 mr-[5px] transicao-cor lg:group-hover:text-roxo-1h">
            Redes sociais 
@@ -47,7 +47,7 @@
       <nav class="
        absolute border-1 border-x-border-roxo border-b-border-roxo
        top-12 w-full sm:w-[185px] h-[119px] sm:h-[135px] transition-all
-       duration-300 ease-in-out redes-menu-oculto  
+       duration-300 ease-in-out redes-menu-oculto bg-roxo-4
       " data-menu-s>
         <ul class="redes-menu">
           <li><a href="https://github.com/jose33-afk">Git Hub</a></li>
@@ -59,8 +59,42 @@
   </header>
 
   <main class="
-    w-full
+    flex flex-col  gap-y-[50px] md:w-[95%] 2xl:w-full 2xl:grid 2xl:grid-cols-[50px_1fr_100px_1fr_50px]
+    my-10 m-auto md:my-20 w-[350px]
   ">
+  <section class="
+    max-w-[850px] 2xl:w-full h-[626px] border-1 rounded-md
+    col-start-2 col-end-3 hidden md:block order-2 2xl:order-none
+  ">
+    <div class="w-[320px] flex"> 
+      <button class="bnt-tabs">
+        Trabalhos
+      </button>
+      <button class="bnt-tabs bnt-pessoal">
+        Projetos pessoais
+      </button>
+    </div>
+    <div class="container-img">
+
+    </div> 
+  </section>
+
+  <section class="
+    w-[350px] h-[626px] border-1 rounded-md
+    col-start-4 col-end-5 order-1 2xl:order-none
+   "> 
+    <div class="w-full flex"> 
+      <button class="bnt-tabs w-[175px]">
+        Trabalhos
+      </button>
+      <button class="bnt-tabs bnt-pessoal w-[175px]">
+        Projetos pessoais
+      </button>
+    </div>
+    <div class="container-img rounded-r-none">
+
+    </div> 
+  </section>
   </main>
 </body>
 </html>
