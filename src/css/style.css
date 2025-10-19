@@ -529,6 +529,10 @@
     visibility: hidden;
     opacity: 0%;
   }
+  .menu-visivel {
+    visibility: visible;
+    opacity: 100%;
+  }
   .redes-menu {
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
@@ -679,7 +683,7 @@
     border-color: var(--color-bord);
     background-color: var(--color-roxo-4);
     scrollbar-width: none;
-    scrollbar-color: #6B32A5 transparent;
+    scrollbar-color: #6B32A5 #16002D;
   }
   .container-img-scroll {
     scrollbar-width: thin;
@@ -693,7 +697,7 @@
     height: auto;
     max-width: 850px;
     object-fit: cover;
-    object-position: top;
+    object-position: center;
   }
 }
 @property --tw-rotate-x {

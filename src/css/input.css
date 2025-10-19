@@ -33,6 +33,10 @@
     @apply opacity-0 invisible;
   }
 
+  .menu-visivel {
+    @apply opacity-100 visible;
+  }
+
   .redes-menu {
     @apply text-roxo-3 font-bold;
   }
@@ -76,7 +80,7 @@
       rounded-r-sm w-full h-[calc(100%-40px)] 
     ;
     scrollbar-width: none;
-    scrollbar-color: #6B32A5 transparent;
+    scrollbar-color: #6B32A5 #16002D;
   }
 
   .container-img-scroll {
@@ -89,7 +93,7 @@
 
   .container-img img{
     @apply 
-      object-cover object-top max-w-[850px] h-auto
+      object-cover object-center max-w-[850px] h-auto
     ;
   }
 }
