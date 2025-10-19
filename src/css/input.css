@@ -47,8 +47,24 @@
   .bnt-tabs {
     @apply 
     border-t-1 border-l-1 border-r-1 border-bord2 bg-roxo-4
-    font-comic font-bold
+    font-comic font-bold rounded-tl-sm
     text-roxo-3 w-[170px] h-[40px] m-0
+    ;
+  }
+  
+  .bnt-pessoal {
+    @apply rounded-tl-none rounded-tr-sm;
+  }
+
+  .icon-pc {
+    @apply 
+      hidden md:block md:-top-9 2xl:top-0 size-8 absolute  2xl:-left-9 
+    ;
+  }
+
+  .icon-mobile {
+    @apply 
+      size-7 absolute -top-9 2xl:top-1 2xl:-left-8
     ;
   }
 
