@@ -48,7 +48,7 @@
       <nav class="
        absolute border-1 border-x-border-roxo border-b-border-roxo
        top-12 w-full sm:w-[185px] h-[119px] sm:h-[135px] transition-all
-       duration-300 ease-in-out redes-menu-oculto bg-roxo-4
+       duration-300 ease-in-out redes-menu-oculto bg-roxo-4 z-1
       " data-menu-s>
         <ul class="redes-menu">
           <li><a href="https://github.com/jose33-afk">Git Hub</a></li>
@@ -70,17 +70,18 @@
     <img src="./src/img/icons/icon-pc.svg" alt="icone-pc"  class="icon-pc">
     
     <div class="w-[320px] flex"> 
-      <button class="bnt-tabs">
+      <button class="bnt-tabs" data-bnt-pc>
         Trabalhos
       </button>
-      <button class="bnt-tabs bnt-pessoal">
+      <button class="bnt-tabs bnt-pessoal" data-bnt-mo-pc>
         Projetos pessoais
       </button>
     </div>  
-
+    <!--pc-->
     <div class="container-img" data-pc>
-      <img src="./src/img/pc/trabalho-1.png" alt="foto-site">
-      <img src="./src/img/pc/print-2.png" alt="foto-site">
+      <img src="./src/img/pc/trabalho-1.png" alt="foto-site" data-trabalho>
+      <img src="./src/img/pc/pessoal-pc-1.png" alt="foto-site" data-pessoal class="hidden">
+      <img src="./src/img/pc/pessoal-pc-2.png" alt="foto-site" data-pessoal class="hidden">
     </div> 
   </section>  
   
@@ -91,17 +92,17 @@
    <img src="./src/img/icons/mobile-ico.svg" alt="icone-mobile" class="icon-mobile">
 
     <div class="w-full flex"> 
-      <button class="bnt-tabs w-[175px]">
+      <button class="bnt-tabs w-[175px]" data-bnt-mobile>
         Trabalhos
       </button>
-      <button class="bnt-tabs bnt-pessoal w-[175px]">
+      <button class="bnt-tabs bnt-pessoal w-[175px]" data-bnt-mobilep>
         Projetos pessoais
       </button>
     </div>
-
+    <!--mobile-->
     <div class="container-img container-img-m rounded-r-none" data-galeria>
-      <img src="./src/img/mobile/trabalho-1-mob.png" alt="" >
-      <img src="./src/img/mobile/screencapture-jose33-afk-github-io-tailwind-sites-social-links-profile-main-2025-10-17-19_40_59.png" alt="">
+      <img src="./src/img/mobile/trabalho-1-mob.png" alt="foto-mobile" data-trabalho="">
+      <img src="./src/img/mobile/pessoal-1-mob.png" alt="foto-mobile" data-pessoal>
     </div> 
   </section>
   

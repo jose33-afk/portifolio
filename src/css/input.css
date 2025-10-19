@@ -72,7 +72,7 @@
 
   .container-img {
     @apply 
-      relative border-1 gap-10 flex overflow-x-auto border-bord rounded-b-sm 
+      relative border-1 gap-10 flex overflow-x-auto border-bord rounded-b-sm  bg-roxo-4
       rounded-r-sm w-full h-[calc(100%-40px)] 
     ;
     scrollbar-width: none;
