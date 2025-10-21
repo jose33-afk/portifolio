@@ -63,6 +63,7 @@
     flex flex-col gap-y-20 md:w-[95%] 2xl:w-full 2xl:grid 2xl:grid-cols-[50px_1fr_100px_1fr_50px]
     m-auto md:ml-[20px] 2xl:ml-0 md:mr-0 my-20 w-[350px]
   ">
+  <!--pc-->
   <section class="
     max-w-[850px] 2xl:w-full h-[626px] border-1 rounded-md relative
     col-start-2 col-end-3 hidden md:block order-2 2xl:order-none
@@ -77,20 +78,28 @@
         Projetos pessoais
       </button>
     </div>  
-    <!--pc-->
-    <div class="container-img" data-pc>
-      <img src="./src/img/pc/trabalho-1.png" alt="foto-site" data-trabalho>
-      <img src="./src/img/pc/pessoal-pc-1.png" alt="foto-site" data-pessoal class="hidden">
-      <img src="./src/img/pc/pessoal-pc-2.png" alt="foto-site" data-pessoal class="hidden">
-      <img src="./src/img/pc/pessoal-pc-3.png" alt="foto-site" data-pessoal class="hidden">
-      <img src="./src/img/pc/pessoal-pc-4.png" alt="foto-site" data-pessoal class="hidden">
-      <img src="./src/img/pc/pessoal-pc-5.png" alt="foto-site" data-pessoal class="hidden">
-      <img src="./src/img/pc/pessoal-pc-6.png" alt="foto-site" data-pessoal class="hidden">
-      <img src="./src/img/pc/pessoal-pc-7.png" alt="foto-site" data-pessoal class="hidden">
-      <img src="./src/img/pc/pessoal-pc-8.png" alt="foto-site" data-pessoal class="hidden">
-    </div> 
+    
+    <div class="container-img container-pc" data-pc>
+      <div data-trabalho>
+        <img src="./src/img/pc/trabalho-1.png" alt="foto-site">
+        <!--link site-->
+        <a href="https://amfightclube.github.io/academia/" target="_blank" class="link-geral posi-mo-inicio opacity-0" data-link>
+          <img src="./src/img/icons/link-site.svg" alt="bnt-relativo-site">
+        </a>
+        <a href="https://amfightclube.github.io/academia/" target="_blank" class="link-geral posi-mo-final opacity-0" data-link>
+          <img src="./src/img/icons/link-site.svg" alt="bnt-relativo-site">
+        </a>
+      </div>
+      <div class="hidden" data-pessoal>
+        <img src="./src/img/pc/pessoal-pc-1.png" alt="foto-site">
+      </div>
+      <div class="hidden" data-pessoal>
+        <img src="./src/img/pc/pessoal-pc-2.png" alt="foto-site">
+      </div>
+    
   </section>  
-  
+
+  <!--mobile-->
   <section class="
     w-[350px] h-[626px] border-1 rounded-md relative
     col-start-4 col-end-5 order-1 2xl:order-none
@@ -105,21 +114,110 @@
         Projetos pessoais
       </button>
     </div>
-    <!--mobile-->
-    <div class="container-img container-img-m rounded-r-none" data-galeria>
-      <img src="./src/img/mobile/trabalho-mo-1.png" alt="foto-site" data-trabalho>
-      <img src="./src/img/mobile/pessoal-mo-1.png" alt="foto-site" data-pessoal class="hidden">
-      <img src="./src/img/mobile/pessoal-mo-2.png" alt="foto-site" data-pessoal class="hidden">
-      <img src="./src/img/mobile/pessoal-mo-3.png" alt="foto-site" data-pessoal class="hidden">
-      <img src="./src/img/mobile/pessoal-mo-4.png" alt="foto-site" data-pessoal class="hidden">
-      <img src="./src/img/mobile/pessoal-mo-5.png" alt="foto-site" data-pessoal class="hidden">
-      <img src="./src/img/mobile/pessoal-mo-6.png" alt="foto-site" data-pessoal class="hidden">
-      <img src="./src/img/mobile/pessoal-mo-7.png" alt="foto-site" data-pessoal class="hidden">
-      <img src="./src/img/mobile/pessoal-mo-8.png" alt="foto-site" data-pessoal class="hidden">
+    
+    <div class="container-img container-mo " data-galeria-mo>
+      <img src="./src/img/icons/mobile-2.svg" alt="icone-prabaixo" class="icone-baix" data-icone-aba>
+
+      <div data-trabalho>
+        <img src="./src/img/mobile/trabalho-mo-1.png" alt="foto-site" data-trabalho>
+        <!--link site-->
+        <a href="https://amfightclube.github.io/academia/" target="_blank" class="link-geral       posi-mo-inicio opacity-0" data-link>
+          <img src="./src/img/icons/link-site.svg" alt="bnt-relativo-site">
+        </a>
+        <a href="https://amfightclube.github.io/academia/" target="_blank" class="link-geral posi-mo-final opacity-0" data-link>
+          <img src="./src/img/icons/link-site.svg" alt="bnt-relativo-site">
+        </a>
+      </div>
+
+      <div class="hidden" data-pessoal>
+        <img src="./src/img/mobile/pessoal-mo-1.png" alt="foto-site">
+         <!--link site-->
+        <a href="https://jose33-afk.github.io/tailwind-sites/faq-accordion-main/index.html" class="link-geral posi-mo-inicio opacity-0"  target="_blank" data-link>
+          <img src="./src/img/icons/link-site.svg" alt="bnt-relativo-site">
+        </a>
+        <a href="https://jose33-afk.github.io/tailwind-sites/faq-accordion-main/index.html" class="link-geral posi-mo-final opacity-0" target="_blank" data-link>
+          <img src="./src/img/icons/link-site.svg" alt="bnt-relativo-site">
+        </a>
+      </div>
+
+      <div class="hidden" data-pessoal>
+        <img src="./src/img/mobile/pessoal-mo-2.png" alt="foto-site">
+        <!--link site-->
+        <a href="https://jose33-afk.github.io/tailwind-sites/results-summary-component-main/index.html" class="link-geral posi-mo-inicio opacity-0" target="_blank" data-link>
+          <img src="./src/img/icons/link-site.svg" alt="bnt-relativo-site">
+        </a>
+        <a href="https://jose33-afk.github.io/tailwind-sites/results-summary-component-main/index.html" class="link-geral posi-mo-final opacity-0" target="_blank" data-link>
+          <img src="./src/img/icons/link-site.svg" alt="bnt-relativo-site">
+        </a>
+      </div>
+
+      <div class="hidden" data-pessoal>
+        <img src="./src/img/mobile/pessoal-mo-3.png" alt="foto-site">
+        <!--link site-->
+        <a href="https://jose33-afk.github.io/tailwind-sites/manage-landing-page-master/index.html" class="link-geral posi-mo-inicio opacity-0" target="_blank" data-link>
+          <img src="./src/img/icons/link-site.svg" alt="bnt-relativo-site">
+        </a>
+        <a href="https://jose33-afk.github.io/tailwind-sites/manage-landing-page-master/index.html" class="link-geral posi-mo-final opacity-0" target="_blank" data-link>
+          <img src="./src/img/icons/link-site.svg" alt="bnt-relativo-site">
+        </a>
+      </div>
+
+      <div class="hidden" data-pessoal>
+        <img src="./src/img/mobile/pessoal-mo-4.png" alt="foto-site">
+        <!--link site-->
+        <a href="https://jose33-afk.github.io/tailwind-sites/social-proof-section-master/index.html" class="link-geral posi-mo-inicio opacity-0" target="_blank" data-link>
+          <img src="./src/img/icons/link-site.svg" alt="bnt-relativo-site">
+        </a>
+        <a href="https://jose33-afk.github.io/tailwind-sites/social-proof-section-master/index.html" class="link-geral posi-mo-final opacity-0" target="_blank" data-link>
+          <img src="./src/img/icons/link-site.svg" alt="bnt-relativo-site">
+        </a>
+      </div>
+
+      <div class="hidden" data-pessoal>
+        <img src="./src/img/mobile/pessoal-mo-5.png" alt="foto-site">
+        <!--link site-->
+        <a href="https://jose33-afk.github.io/tailwind-sites/four-card-feature-section-master/index.html" class="link-geral posi-mo-inicio opacity-0" target="_blank" data-link>
+          <img src="./src/img/icons/link-site.svg" alt="bnt-relativo-site">
+        </a>
+        <a href="https://jose33-afk.github.io/tailwind-sites/four-card-feature-section-master/index.html" class="link-geral posi-mo-final opacity-0" target="_blank" data-link>
+          <img src="./src/img/icons/link-site.svg" alt="bnt-relativo-site">
+        </a>
+     </div>
+
+      <div class="hidden" data-pessoal>
+        <img src="./src/img/mobile/pessoal-mo-6.png" alt="foto-site">
+        <!--link site-->
+        <a href="https://jose33-afk.github.io/tailwind-sites/social-links-profile-main/" class="link-geral posi-mo-inicio opacity-0" target="_blank" data-link>
+          <img src="./src/img/icons/link-site.svg" alt="bnt-relativo-site">
+        </a>
+        <a href="https://jose33-afk.github.io/tailwind-sites/social-links-profile-main/" class="link-geral posi-mo-final opacity-0" target="_blank" data-link>
+          <img src="./src/img/icons/link-site.svg" alt="bnt-relativo-site">
+        </a>
+     </div>
+
+     <div class="hidden" data-pessoal>
+        <img src="./src/img/mobile/pessoal-mo-7.png" alt="foto-site">
+        <!--link site-->
+        <a href="https://jose33-afk.github.io/validacao-ceps/" class="link-geral posi-mo-inicio opacity-0" target="_blank" data-link>
+          <img src="./src/img/icons/link-site.svg" alt="bnt-relativo-site">
+        </a>
+        <a href="https://jose33-afk.github.io/validacao-ceps/" class="link-geral posi-mo-final opacity-0" target="_blank" data-link>
+          <img src="./src/img/icons/link-site.svg" alt="bnt-relativo-site">
+        </a>
+     </div>
+
+     <div class="hidden" data-pessoal>
+        <img src="./src/img/mobile/pessoal-mo-8.png" alt="foto-site">
+          <!--link site-->
+        <a href="https://jose33-afk.github.io/tailwind-sites/recipe-page-main/index.html" class="link-geral posi-mo-inicio opacity-0" target="_blank" data-link>
+          <img src="./src/img/icons/link-site.svg" alt="bnt-relativo-site">
+        </a>
+        <a href="https://jose33-afk.github.io/tailwind-sites/recipe-page-main/index.html" class="link-geral posi-mo-final opacity-0" target="_blank" data-link>
+          <img src="./src/img/icons/link-site.svg" alt="bnt-relativo-site">
+        </a>
+     </div>
     </div> 
   </section>
-  
-
   </main>
 </body>
 </html>
