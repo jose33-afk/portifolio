@@ -222,24 +222,6 @@
   .row-end-2 {
     grid-row-end: 2;
   }
-  .container {
-    width: 100%;
-    @media (width >= 40rem) {
-      max-width: 40rem;
-    }
-    @media (width >= 48rem) {
-      max-width: 48rem;
-    }
-    @media (width >= 64rem) {
-      max-width: 64rem;
-    }
-    @media (width >= 80rem) {
-      max-width: 80rem;
-    }
-    @media (width >= 96rem) {
-      max-width: 96rem;
-    }
-  }
   .m-auto {
     margin: auto;
   }
@@ -260,9 +242,6 @@
   }
   .hidden {
     display: none;
-  }
-  .table {
-    display: table;
   }
   .size-\[10px\] {
     width: 10px;
@@ -305,12 +284,6 @@
   .max-w-\[850px\] {
     max-width: 850px;
   }
-  .flex-shrink {
-    flex-shrink: 1;
-  }
-  .border-collapse {
-    border-collapse: collapse;
-  }
   .rotate-180 {
     rotate: 180deg;
   }
@@ -319,9 +292,6 @@
   }
   .cursor-pointer {
     cursor: pointer;
-  }
-  .resize {
-    resize: both;
   }
   .flex-col {
     flex-direction: column;
@@ -350,10 +320,6 @@
   .rounded-b-md {
     border-bottom-right-radius: var(--radius-md);
     border-bottom-left-radius: var(--radius-md);
-  }
-  .border {
-    border-style: var(--tw-border-style);
-    border-width: 1px;
   }
   .border-1 {
     border-style: var(--tw-border-style);
@@ -416,15 +382,8 @@
   .text-roxo-2 {
     color: var(--color-roxo-2);
   }
-  .underline {
-    text-decoration-line: underline;
-  }
   .opacity-0 {
     opacity: 0%;
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
   }
   .filter {
     filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
@@ -777,7 +736,6 @@
   }
   .link-geral {
     position: absolute;
-    left: calc(var(--spacing) * 60);
     height: calc(var(--spacing) * 5);
     width: calc(var(--spacing) * 20);
     transition-property: all;
@@ -792,11 +750,19 @@
     --tw-border-style: none;
     border-style: none;
   }
+  .posi-pc-inicio {
+    top: 20px;
+    right: 40px;
+    height: calc(var(--spacing) * 4);
+    width: calc(var(--spacing) * 20);
+  }
   .posi-mo-inicio {
     top: 20px;
+    left: calc(var(--spacing) * 60);
   }
   .posi-mo-final {
     bottom: 20px;
+    left: calc(var(--spacing) * 60);
   }
 }
 @property --tw-rotate-x {
@@ -827,11 +793,6 @@
 @property --tw-font-weight {
   syntax: "*";
   inherits: false;
-}
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
 }
 @property --tw-blur {
   syntax: "*";
@@ -909,7 +870,6 @@
       --tw-skew-y: initial;
       --tw-border-style: solid;
       --tw-font-weight: initial;
-      --tw-outline-style: solid;
       --tw-blur: initial;
       --tw-brightness: initial;
       --tw-contrast: initial;

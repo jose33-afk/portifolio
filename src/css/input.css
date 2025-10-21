@@ -125,7 +125,7 @@
  
   .link-geral {
     @apply 
-     h-5 w-20 absolute left-60 transition-all 
+     h-5 w-20 absolute  transition-all 
      duration-200 ease-linear 
     ;
   }
@@ -134,12 +134,16 @@
     @apply border-none;
   }
 
+  .posi-pc-inicio {
+    @apply top-[20px] right-[40px] h-4 w-20; 
+  }
+
   .posi-mo-inicio {
-    @apply top-[20px];
+    @apply top-[20px] left-60;
   }
 
   .posi-mo-final {
-    @apply bottom-[20px];
+    @apply bottom-[20px] left-60;
   }
 
 
