@@ -16,6 +16,7 @@
   --color-roxo-2: #935DCA;
   --color-roxo-3: #834BBB;
   --color-roxo-4: #16002D;
+  --color-roxo-5: #3F126C;
   --color-border-roxo: #6E5685;
 }
 
@@ -53,8 +54,8 @@
     border-t-1 border-l-1 border-r-1 border-bord2 bg-roxo-4
     font-comic font-bold text-roxo-3 rounded-tl-sm lg:hover:border-roxo-1
     lg:hover:text-roxo-1 active:border-roxo-1 active:text-roxo-1
-    transition-colors duration-400
-    w-[170px] h-[40px] m-0
+    transition-colors duration-400 cursor-pointer
+    w-[170px] h-[40px] m-0 
     ;
   }
   
@@ -77,7 +78,8 @@
   /*img sites*/
   .container-img {
     @apply 
-      relative border-1 border-bord rounded-b-sm  bg-roxo-3 rounded-r-sm w-full h-[calc(100%-40px)];
+      relative border-1 border-bord rounded-b-sm  
+      bg-roxo-3 rounded-r-sm w-full h-[calc(100%-40px)];
     ;
     scrollbar-width: none;
     scrollbar-color: #6B32A5 #16002D;
@@ -109,7 +111,38 @@
       h-full w-full object-cover
     ;
   }
-   /*Mobile*/
+
+  /*botoes proximo e voltar img*/
+  .container-bnts-avancar-img {
+    @apply  flex justify-between absolute top-[46%] h-12 w-full z-50 ;
+  }
+
+  .bnt-left {
+    @apply ml-3;
+  }
+
+  .bnt-right {
+    @apply mr-3;
+  }
+
+  .botoes {
+    @apply size-11 cursor-pointer opacity-0;
+  }
+   
+  .botoes svg {
+    @apply h-full w-full ;
+  }
+
+  .botoes circle {
+    @apply fill-[#16002D] group-hover:fill-[#1f033d];
+  }
+
+  .botoes path {
+    @apply  fill-[#6B32A5]/40 group-hover:fill-[#6B32A5]/100;
+   ;
+  }
+
+  /*Mobile*/
   .container-mo {
     @apply flex flex-col overflow-y-auto gap-1 w-full;
   }

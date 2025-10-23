@@ -1,7 +1,9 @@
 import './components/redes-so.js';
 import './components/tabs.js';
-import './components/monitor-mouse.js'
+import './components/monitor-mouse.js';
+import './bnts-rolagem-img.js';
 
+console.log('ola')
 //Links mobile
 const abreJanelaMob = () => {
   const containerImgMo = document.querySelector('[data-galeria]');
@@ -26,11 +28,14 @@ const abreJanelaMob = () => {
  
 };
 
-abreJanelaMob()
+abreJanelaMob();
 
+
+//Explicaçoes.
 
 /*
  1 - Para tirar o comportamento padrao, e o event e os metodos do evento 'click'.
+
  2 - 'propriedade' in objeto, verifica se a propriedade exite em uma array ou obj 
   const pessoa = {
     nome: 'João',
@@ -40,6 +45,7 @@ abreJanelaMob()
   'length' in [1,2,3];  // true (arrays têm lengt.
 
  2 - ontouchstart → evento que só existe em dispositivos com tela touch (celular/tablet).
+
   navigator.maxTouchPoints → número de toques que o device aguenta ao mesmo tempo
   Desktop sem touch = 0
   Celular/tablet = 1 ou mais (geralmente 5 ou 10) 

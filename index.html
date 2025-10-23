@@ -11,7 +11,7 @@
   bg-bg-pag h-full
 "> 
   <header class="
-    bg-bg-header border-b-1 border-bord flex items-center justify-between rounded-b-md sm:text-sm font-comic text-[10px]
+    bg-bg-header border-b-1 border-bord flex items-center justify-between rounded-b-md sm:text-sm font-comic text-[13px]
     col-span-full row-end-2 h-[70px] w-full 
   ">
     <!--perfil-->
@@ -19,7 +19,7 @@
       flex gap-x-[15px] sm:gap-x-[25px] ml-[10px] sm:ml-[50px] md:ml-[20px] 
       2xl:ml-[50px] items-center
     "> 
-      <img src="./src/img/German Sparrow (Klein Moretti).jpeg" alt="foto-jose" class="rounded-full size-[46px] object-cover border-1 border-bord">
+      <img src="./src/img/German Sparrow (Klein Moretti).jpeg" alt="foto-jose" class="rounded-full size-[46px] object-cover border-1 border-bord/50">
       <p class="
         font-comic text-roxo-2 
       ">
@@ -30,16 +30,17 @@
     <!--Redes e contat-->
     <div class="mr-[10px] sm:mr-[50px] md:mr-[20px] 2xl:mr-[50px] alinha-center h-[26px] relative gap-x-[15px] sm:gap-x-[25px]">
       <button class="alinha-center group cursor-pointer" data-bnt-soci>
-        <p class="font-bold text-roxo-1 mr-[5px] transicao-cor lg:group-hover:text-roxo-1h">
-           Redes sociais 
+        <p class="font-bold text-roxo-1 mr-[5px] transicao-cor lg:group-hover:text-roxo-1h flex gap-[4px]">
+           Redes <span class="hidden sm:block">sociais</span>
         </p>
-        <svg width="12" height="10" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-[#3F126C] size-[10px] lg:group-hover:text-roxo-1h group-active:text-roxo-1h transicao-cor transition-transform duration-300" data-svg-trian>
+        <img src="./src/img/icons/menu-redes.svg" alt="icone-share" class="sm:hidden group-active:rotate-12 transition-all duration-400">
+        <svg width="12" height="10" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-[#3F126C] size-[10px] lg:group-hover:text-roxo-1h group-active:text-roxo-1h transicao-cor transition-transform duration-300 hidden sm:block" data-svg-trian>
          <path d="M6.01623 9.51606L0.80669 0.495532L11.2235 0.494197L6.01623 9.51606Z" fill="currentColor"/>
         </svg>
       </button>
       
       <button class="
-        border-2 border-roxo-1 font-roboto font-bold text-roxo-1 
+        border-2 border-roxo-1 font-roboto mr-[3px] font-bold text-roxo-1 
         p-3 h-[23px] alinha-center rounded-sm
       ">
         CONTATO
@@ -69,6 +70,7 @@
     col-start-2 col-end-3 hidden md:block order-2 2xl:order-none
   ">
     <img src="./src/img/icons/icon-pc.svg" alt="icone-pc"  class="icon-pc">
+     
     
     <div class="w-[320px] flex"> 
       <button class="bnt-tabs" data-bnt-pc>
@@ -79,7 +81,22 @@
       </button>
     </div>  
     
-    <div class="container-img container-pc" data-pc>
+    <div class="container-img container-pc group" data-pc>
+      <nav class="container-bnts-avancar-img"> <!--botoes proximo e voltar img-->
+        <button class="botoes bnt-left" data-ide="ant">
+           <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="20.5" cy="20.5" r="20.5"/>
+            <path d="M9.1327 20.8082L26.2288 10.7045L26.4309 30.562L9.1327 20.8082Z"/>
+          </svg>
+        </button>
+        <button class="botoes bnt-right" data-ide="prox">
+          <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="20.5" cy="20.5" r="20.5"/>
+            <path d="M31.8673 20.8082L14.7712 10.7045L14.5691 30.562L31.8673 20.8082Z"/>
+          </svg>
+        </button>
+      </nav>
+ 
       <div data-trabalho>
         <img src="./src/img/pc/trabalho-1.png" alt="foto-site">
         <!--link site-->
