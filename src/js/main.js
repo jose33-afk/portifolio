@@ -2,6 +2,7 @@ import './components/redes-so.js';
 import './components/tabs.js';
 import './components/monitor-mouse.js';
 import './bnts-rolagem-img.js';
+import './components/dots.js';
 
 //Links mobile
 const abreJanelaMob = () => {
