@@ -1,32 +1,32 @@
-//Colocar isso em outro arquivo.
-/*const container = pegaElemento('[data-pc]');
+import { pegaElemento } from "./ultils.js";
+const container = pegaElemento('[data-pc]');
 const bnts = pegaElemento('.botoes', 2);
 let posicao = 0;
 
-const passarImg = (index) => {
+const passarImg = (list, index) => {
   container.scrollTo({
-    left: listImgs[index].offsetLeft, //1
+    left: list[index].offsetLeft, //1
     behavior: "smooth"
   });
 };
 
 
-const MaisUmaImg = () => {
- const isImgs = pegaElemento('[data-pc] div[data-pessoal]:not(.hidden), [data-pc] div[data-trabalho]:not(.hidden)', 2); 
-
- if (isImgs.length > 1) return true;
- else return false;
-};
-
-
 bnts.forEach(bnt => {
    bnt.addEventListener('click', () => {
-     const listImgs = pegaElemento('[data-pc] div[data-pessoal]:not(.hidden), [data-pc] div[data-trabalho]:not(.hidden)', 2);
+     let listImgs = pegaElemento('[data-pc] div[data-pessoal]:not(.hidden), [data-pc] div[data-trabalho]:not(.hidden)', 2); 
+
      if (listImgs.length > 1) {
-        console.log('mais de 1')
-     }
-   })
-  
+       if (bnt.dataset.ide === "prox") {
+         posicao = (posicao + 1) % listImgs.length;
+         passarImg(listImgs, posicao);
+       } else {
+         posicao = (posicao - 1 + listImgs.length) % listImgs.length;
+         passarImg(listImgs, posicao);
+       };
+     };
+   });
+});
+
   /*bnt.addEventListener('click', () => {
     if (bnt.dataset.ide === "prox") {
       posicao = (posicao + 1) % listImgs.length; //proximo
@@ -36,4 +36,4 @@ bnts.forEach(bnt => {
       passarImg(posicao);
     };
   });
-});*/
+});*/ 

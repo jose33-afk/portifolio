@@ -3,7 +3,6 @@ import './components/tabs.js';
 import './components/monitor-mouse.js';
 import './bnts-rolagem-img.js';
 
-console.log('ola')
 //Links mobile
 const abreJanelaMob = () => {
   const containerImgMo = document.querySelector('[data-galeria]');
