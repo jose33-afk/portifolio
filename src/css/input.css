@@ -154,7 +154,7 @@
 
   .dot {
     @apply 
-      size-3 rounded-full border-1 border-b-roxo-4 
+      size-3 rounded-full border-1 border-roxo-2 
       transition-all block m-1
     ;
    }    

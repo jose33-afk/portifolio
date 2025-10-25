@@ -847,7 +847,7 @@
     border-radius: calc(infinity * 1px);
     border-style: var(--tw-border-style);
     border-width: 1px;
-    border-bottom-color: var(--color-roxo-4);
+    border-color: var(--color-roxo-2);
     transition-property: all;
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
     transition-duration: var(--tw-duration, var(--default-transition-duration));

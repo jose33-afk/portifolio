@@ -32,6 +32,7 @@ const addDots = (quantidadeImgs) => {
 
 
 //Tabs, começa aqui.
+quantiImg(); //primeira interacao(carregar dots do trabalho).
 const mostraElement = (element, selec, trabalhoOup) => {
    element.addEventListener('click', () => {
      const elementPai = document.querySelector(selec);
