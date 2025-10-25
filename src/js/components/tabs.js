@@ -1,19 +1,21 @@
 import { pegaElemento } from "../ultils.js";
+import { feedBackImg } from "./dots.js";
 const bntTrabalhoPc = document.querySelector('[data-bnt-pc]');
 const bntPessoalPc = document.querySelector('[data-bnt-mo-pc]');
 const bntTrabalhoMo = document.querySelector('[data-bnt-mobile]');
 const bntPessoalMo =document.querySelector('[data-bnt-mobilep]');
 
-//Dots parte1.
-let quantidadeImgs = 0;
+//Dots.
+const containerDivImg = pegaElemento('[data-pc]');
+const refereLargDiv = containerDivImg.querySelector('div').clientWidth;
 
 const quantiImg = () => {
   const listForDots = pegaElemento('[data-pc] div[data-pessoal]:not(.hidden), [data-pc] div[data-trabalho]:not(.hidden)', 2);
-  quantidadeImgs = listForDots.length;
-  addDots(quantidadeImgs);
+  let quantImgAtivas = listForDots.length;
+  addDots(quantImgAtivas);
 };
 
-const addDots = (DotsAdicionar) => {
+const addDots = (quantidadeImgs) => {
   const containerDots = pegaElemento('.dots-container');
   containerDots.innerHTML = ""; //limpar.
 
@@ -22,9 +24,14 @@ const addDots = (DotsAdicionar) => {
         <span class="dot"></span>
       `
   };
+
+  let listDots = Array.from(containerDots.querySelectorAll('span'));
+  if (listDots[0]) listDots[0].classList.add('active'); //primeira bolinha.
+  feedBackImg(containerDivImg, refereLargDiv, listDots);
 };
 
-//Tabs.
+
+//Tabs, começa aqui.
 const mostraElement = (element, selec, trabalhoOup) => {
    element.addEventListener('click', () => {
      const elementPai = document.querySelector(selec);
@@ -39,7 +46,7 @@ const mostraElement = (element, selec, trabalhoOup) => {
         img.classList.remove('hidden');
      });
 
-     quantiImg() //Att quantidade imgs.
+     quantiImg() //Atualizar quantidade imgs.
    });
 };
 

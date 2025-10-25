@@ -10,7 +10,6 @@ const passarImg = (list, index) => {
   });
 };
 
-
 bnts.forEach(bnt => {
    bnt.addEventListener('click', () => {
      let listImgs = pegaElemento('[data-pc] div[data-pessoal]:not(.hidden), [data-pc] div[data-trabalho]:not(.hidden)', 2); 
@@ -26,14 +25,3 @@ bnts.forEach(bnt => {
      };
    });
 });
-
-  /*bnt.addEventListener('click', () => {
-    if (bnt.dataset.ide === "prox") {
-      posicao = (posicao + 1) % listImgs.length; //proximo
-      passarImg(posicao);
-    } else {
-      posicao = (posicao - 1 + listImgs.length) % listImgs.length; // anterior
-      passarImg(posicao);
-    };
-  });
-});*/ 
