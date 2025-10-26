@@ -67,11 +67,16 @@
   ">
   <!--pc-->
     <section class="
-      max-w-[850px] 2xl:w-full h-[626px] border-1 rounded-md relative
-      col-start-2 col-end-3 hidden md:block order-2 2xl:order-none group
-    ">
+      h-[626px] border-1 rounded-md relative hidden
+      md:block order-2 2xl:order-none group
+      " data-container="pc" data-geral-foco="off" data-posicao-pc="normal"
+    >
       <img src="./src/img/icons/icon-pc.svg" alt="icone-pc"  class="icon-pc">
-        
+      
+      <button class="absolute top-5 left-7 z-50 hidden" data-bnt-x> 
+        <img src="./src/img/icons/x.svg" alt="icone-x">
+      </button>
+
       <div class="w-[320px] flex"> 
         <button class="bnt-tabs" data-bnt-pc>
           Trabalhos
@@ -96,6 +101,9 @@
           </svg>
         </button>
       </nav>
+
+      <button class="bnt-foco absolute bg-[url('../img/icons/full.svg')]" data-bnt-foco="pc"> <!--Aqui e como se eu tivesse no style.-->
+      </button>
 
       <div class="dots-container absolute">  
         <span class="dot active"></span>
@@ -180,9 +188,12 @@
     <!--mobile-->
     <section class="
       w-[350px] h-[626px] border-1 rounded-md relative
-      col-start-4 col-end-5 order-1 2xl:order-none
-    "> 
+      order-1 2xl:order-none" data-container="mobile" data-posicao-mo="normal" data-geral-foco="off"> 
       <img src="./src/img/icons/mobile-ico.svg" alt="icone-mobile" class="icon-mobile">
+
+      <button class="absolute top-15 left-4 z-50 hidden" data-bnt-x> 
+        <img src="./src/img/icons/x.svg" alt="icone-x">
+      </button>
 
       <div class="w-full flex"> 
         <button class="bnt-tabs w-[175px]" data-bnt-mobile>
@@ -192,9 +203,12 @@
           Projetos pessoais
         </button>
       </div>
+
+      <button class="bnt-foco absolute bg-[url('../img/icons/full.svg')] left-[84%]" data-bnt-foco="mobile">
+      </button>
         
       <!--Imagens-->
-      <div class="container-img container-mo " data-galeria>
+      <div class="container-img container-mo" data-galeria>
         <img src="./src/img/icons/mobile-2.svg" alt="icone-prabaixo" class="icone-baix" data-icone-aba>
 
         <div data-trabalho>

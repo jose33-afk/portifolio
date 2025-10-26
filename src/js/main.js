@@ -3,6 +3,7 @@ import './components/tabs.js';
 import './components/monitor-mouse.js';
 import './bnts-rolagem-img.js';
 import './components/dots.js';
+import './modo-foco-img.js';
 
 //Links mobile
 const abreJanelaMob = () => {

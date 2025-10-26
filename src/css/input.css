@@ -119,11 +119,11 @@
   }
 
   .bnt-left {
-    @apply ml-3;
+    @apply ml-9;
   }
 
   .bnt-right {
-    @apply mr-3;
+    @apply mr-9;
   }
 
   .botoes {
@@ -163,6 +163,62 @@
     @apply bg-roxo-3;
   }
 
+  /*modo foco*/
+  .bnt-foco {
+    @apply  
+      bg-contain bottom-5 transition-all duration-200
+      cursor-pointer size-7 left-[92%] z-50 hover:scale-125
+      ;
+  }
+
+  [data-geral-foco="on"] {
+    @apply 
+      shadow-[0px_0px_20px_2px_#54208770]
+    ;
+  }
+
+  /*pc foco*/
+  [data-container="pc"] {
+    @apply 2xl:w-full;
+  }
+
+  [data-posicao-pc="normal"] {
+    @apply col-start-2 col-end-3;
+  }
+
+  [data-posicao-pc="normal"][data-geral-foco="on"] {
+    @apply col-start-2 col-end-5 2xl:w-[70%] ;
+  }
+
+  [data-geral-foco="on"] [data-bnt-pc], [data-geral-foco="on"] [data-bnt-mo-pc] {
+    @apply hidden;
+  }
+
+  [data-geral-foco="on"] ~ [data-container="mobile"] {
+    @apply hidden;
+  }
+
+  [data-geral-foco="on"] [data-pc] {
+    @apply h-[100%];
+  }
+
+  /*Eu iria aumentar a altura da section, centralizar a section no centro.
+  
+   */
+
+  
+  /*Mobile foco*/
+  [data-posicao-mo="normal"] {
+    @apply col-start-4 col-end-5;
+  }
+  
+  [data-posicao-mo="left"] {
+    @apply col-start-2 col-end-3;
+  }
+
+
+
+
   /*Mobile*/
   .container-mo {
     @apply flex flex-col overflow-y-auto gap-1 w-full;
@@ -199,10 +255,4 @@
   .posi-mo-final {
     @apply bottom-[20px] left-60;
   }
-
-
-
-
-
-
 }
